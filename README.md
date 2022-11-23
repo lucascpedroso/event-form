@@ -18,7 +18,7 @@ This is a project from the Explorer course by Rocketseat.
 <br>
 
 <p align="center">
-  <img alt="event form" src="./assets/readme-img.png" width="100%">
+  <img alt="event form" src="./assets/readme-img.png" width="100%" height="50px">
 </p>
 
 ## 🚀 Technologies
