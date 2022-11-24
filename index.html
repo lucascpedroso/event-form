@@ -18,14 +18,14 @@
             <h1>Create and share your own events</h1>
             <p>The first step is to fill up this subscription form.</p>
         </header>
-        <form>
+        <form id="event-form">
             <fieldset>
                 <div class="fieldset-wrapper">
                     <legend>Event information</legend>
 
                     <div class="input-wrapper">
                         <label for="event-title"> Event title <span>(minimum 8 characters)</span></label>
-                        <input type="text" id="event-title">
+                        <input type="text" id="event-title" required minlength="8">
                     </div>
 
                     <div class="input-wrapper">
@@ -66,7 +66,7 @@
 
                     <div class="input-wrapper">
                         <label for="event-password"> Event access password <span>(minimum 8 characters)</span></label>
-                        <input type="password" id="event-password">
+                        <input type="password" id="event-password" minlength="8">
                     </div>
                     
                     <div class="checkbox-wrapper">
@@ -79,7 +79,7 @@
 
             <fieldset>
                 <div class="fieldset-wrapper">
-                    <legend>Day & Time</legend>
+                    <legend>Date & Time</legend>
 
                     <div class="col-3">
                         <div class="input-wrapper">
@@ -100,6 +100,14 @@
                 </div>
             </fieldset>
         </form> 
+
+        <footer>
+            <input 
+            class="button" 
+            type="submit" 
+            form="event-form" 
+            value="Save event">
+        </footer>
     </div>
   
 </body>
